@@ -1,0 +1,172 @@
+/* untuk keseluruhan web*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+/* isinya nama web */
+.header {
+  background: #e63946;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header span {
+  color: #ffdd00;
+}
+
+/* home isinya semacem slogan */
+.home {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #ffdd00, #e63946);
+  color: #fff;
+}
+.home-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.home-content p {
+  font-size: 18px;
+}
+
+/* buat nav sm search */
+.search {
+  padding: 20px;
+  text-align: center;
+}
+.filter-nav {
+  margin-bottom: 15px;
+}
+.filter-btn {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  background: #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: #e63946;
+  color: #fff;
+}
+.search-container input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* grid cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 15px;
+}
+.card-body h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #e63946;
+}
+.card-body p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* pop up pas dipencet cardny */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+.modal-content img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f1f1;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* pas close pop up */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* vid pop up */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

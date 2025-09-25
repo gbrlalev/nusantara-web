@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RitmeWarisan</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="name">
+                💃🏻 Ritme<span>Warisan</span>
+            </div>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h1>Menjelajahi Keindahan Tarian Nusantara</h1>
+                <p>Dari Aceh hingga Papua — gerak yang menyimpan cerita, ritual, dan identitas.</p>
+            </div>
+        </section>
+
+        <!-- class ini isiny button tiap provinsi sm search bar -->
+        <section class="search">
+            <h2>Pilih Provinsi:</h2>
+            <!-- navbar isiny button tiap provinsi -->
+            <nav class="nav">
+                <nav class="filter-nav">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="sumatra">Sumatra</button>
+                <button class="filter-btn" data-category="jawa">Jawa</button>
+                <button class="filter-btn" data-category="kalimantan">Kalimantan</button>
+                <button class="filter-btn" data-category="sulawesi">Sulawesi</button>
+                <button class="filter-btn" data-category="maluku">Maluku</button>
+                <button class="filter-btn" data-category="papua">Papua</button>
+            </nav>
+
+            <!-- buat search -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cari tarian adat...">
+            </div>
+        </section>
+
+        <main class="grid-container" id="contentGrid"></main>
+
+        <footer>
+            <p>Copyright &copy; 2025 RitmeWarisan</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
