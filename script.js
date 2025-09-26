@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "img/tari-saman.png",
       video: "https://www.youtube.com/embed/q-8tMZKBgrA"
     },
-
+    {
+      id: 2,
+      name: ""
+    }
   ];
 
   // ngambil element dr html
