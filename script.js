@@ -12,8 +12,76 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: 2,
-      name: ""
-    }
+      name: "Tari Tortor",
+      region: "sumatra",
+      province: "Sumatra Utara",
+      description: "Tortor adalah jenis tarian tradisional masyarakat Batak yang berasal dari provinsi Sumatera Utara. Tortor merupakan bagian penting dalam upacara adat (ulaon adat) masyarakat Batak. Melalui Tortor, masyarakat Batak menyampaikan harapan dan doa-doanya. Peragaan sikap dan perasaan melalui Tortor selalu menggambarkan kondisi dan situasi yang dialami.",
+      image: "img/tari-tortor.jpg",
+      video: "https://www.youtube.com/embed/TwMi6YFwZt8"
+    },
+    {
+      id: 3,
+      name: "Tari Paring",
+      region: "sumatra",
+      province: "Sumatra Barat",
+      description: "Tari piring adalah tarian tradisional Minangkabau yang berasal dari Sumatera Barat, Solok. Tarian ini menampilkan atraksi menggunakan piring. Para penari mengayunkan piring di tangan mengikuti gerakan-gerakan cepat yang teratur, tanpa satu pun piring terlepas dari tangan. Gerakannya diambil dari langkah dalam silat Minangkabau atau silek.",
+      image: "img/tari-piring.png",
+      video: "https://www.youtube.com/embed/1O_OYwnV6iw"
+    },
+    {
+      id: 4,
+      name: "Tari Zapin",
+      region: "sumatra",
+      province: "Riau",
+      description: "Tari zapin adalah tarian yang berasal dari provinsi Riau, Indonesia. Tarian ini sejatinya berasal dari dataran Timur tengah, khususnya tanah Arab. Namun, tarian ini dibawa oleh para pedagang dalam perjalannya menjual rempah-rempah.",
+      image: "img/tari-zapin.webp",
+      video: "https://www.youtube.com/embed/GINseLXDLEI"
+    },
+    {
+      id: 5,
+      name: "Tari Sekapur Sirih",
+      region: "sumatra",
+      province: "Jambi",
+      description: "Tari Sekapur Sirih adalah salah satu tarian tradisional yang berasal dari daerah Jambi. Tarian ini termasuk jenis tarian penyambutan yang biasanya ditarikan oleh para penari wanita. Dengan berpakaian adat serta diiringi oleh alunan musik pengiring, mereka menari dengan gerakannya yang lemah lembut dan membawakan cerano (wadah) sebagai tanda persembahan.",
+      image: "img/tari-sekapur-sirih.jpg",
+      video: "https://www.youtube.com/embed/bcrGPCtzpgk"
+    },
+    {
+      id: 6,
+      name: "Tari Gending Sriwijaya",
+      region: "sumatra",
+      province: "Sumetra Selatan",
+      description: "Tari tradisional yang sangat indah dan menawan, dengan maksud mulia dan kemurahan hati dalam menyambut tamu, yakni tari Gending Sriwijaya. Tarian ini memang tampak begitu mewah dan elegan. Meski begitu, kerendahhatian dan gotong royong kental terkandung di dalamnya.",
+      image: "img/tari-gending-sriwijaya.jpg",
+      video: "https://www.youtube.com/embed/_iOgonp5hEk"
+    },
+    {
+      id: 7,
+      name: "Tari Andun",
+      region: "sumatra",
+      province: "Bengkulu",
+      description: "Tari Andun merupakan salah satu tari rakyat yang berasal dari Bengkulu. Tari Andun adalah bagian dari persyaratan wajib ketika melaksanakan upacara adat Nundang Padi. Pada umumnya, tari Andun dipentaskan di lapangan terbuka yang lebar dan gerakan tariannya berupa gerak sembah, gerak puji serta gerak saling tindih.",
+      image: "img/tari-andun.jpeg",
+      video: "https://www.youtube.com/embed/6ItJIufEC-M"
+    },
+    {
+      id: 8,
+      name: "Tari Bedana",
+      region: "sumatra",
+      province: "Lampung",
+      description: "Tari Bedana merupakan salah satu tarian tradisional Zapin Melayu yang berasal dari daerah Lampung. Tari Bedana biasanya dibawakan oleh pemuda-pemudi Lampung dalam acara tertentu sebagai bentuk cerminan bahwa masyarakat Lampung mudah bergaul dalam keseharian sebagaimana dalam piil pesenggiri, nengah nyappur tetapi tetap berpedoman pada agama. Tari Bedana memiliki ciri khusus pada adat Lampung Pepadun maupun adat Lampung Saibatin.",
+      image: "img/tari-bedana.jpg",
+      video: "https://www.youtube.com/embed/-M2a8EqsYB0"
+    },
+    {
+      id: 9,
+      name: "Tari Dincak Dambus",
+      region: "sumatra",
+      province: "Kepulauan Bangka Belitung",
+      description: "Tari Dincak Dambus dalam gerak tarinya diciptakan banyak ragam dan rentak dincak tarian yang bervariasi sesuai dengan tuntutan sang penata tari dengan bermacam-macam pola gerak yang dinamis dan gemulai namun tegas mencerminkan kegembiraan dan keceriaan muda mudi Bangka dalam pergaulan sehari-harinya.",
+      image: "img/tari-bedana.jpg",
+      video: "https://www.youtube.com/embed/_dyIVuRxfmY"
+    },
   ];
 
   // ngambil element dr html
