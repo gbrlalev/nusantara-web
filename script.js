@@ -79,8 +79,170 @@ document.addEventListener("DOMContentLoaded", () => {
       region: "sumatra",
       province: "Kepulauan Bangka Belitung",
       description: "Tari Dincak Dambus dalam gerak tarinya diciptakan banyak ragam dan rentak dincak tarian yang bervariasi sesuai dengan tuntutan sang penata tari dengan bermacam-macam pola gerak yang dinamis dan gemulai namun tegas mencerminkan kegembiraan dan keceriaan muda mudi Bangka dalam pergaulan sehari-harinya.",
-      image: "img/tari-bedana.jpg",
+      image: "img/tari-dincak-dambus.jpg",
       video: "https://www.youtube.com/embed/_dyIVuRxfmY"
+    },
+    {
+      id: 10,
+      name: "Tari Jogi",
+      region: "sumatra",
+      province: "Kepulauan Riau",
+      description: "Tari Jogi merupakan sebuah tari yang berasal dari Batam, yang penyajian gerak tarinya didominasi oleh teknik goyang bahu dan pergerakan pinggul yang kentara. Ragam gerak dalam tari Jogi disebut sebagai rangkap yang berkaitan dengan kegiatan sehari-hari masyarakat Batam sebagai nelayan.",
+      image: "img/tari-jogi.jpg",
+      video: "https://www.youtube.com/embed/tgqthGF9r9s"
+    },
+    {
+      id: 11,
+      name: "Tari Topeng Betawi",
+      region: "jawa",
+      province: "DKI Jakarta",
+      description: "Tari Topeng Betawi merupakan salah satu pertunjukan kesenian tradisional yang berasal dari masyarakat Betawi. Tarian ini biasanya dibawakan saat pementasan teater rakyat Topeng Betawi, bersamaan dengan musik, nyanyian, bebodoran (lawak), dan lakon (drama).",
+      image: "img/tari-topeng-betawi.jpg",
+      video: "https://www.youtube.com/embed/BbX60C0E0P4"
+    },
+    {
+      id: 12,
+      name: "Tari Jaipong",
+      region: "jawa",
+      province: "Jawa Barat",
+      description: "Tarian Jaipong adalah tarian gabungan dari sejumlah kesenian tradisional, misalnya pencak silat, ketuk tilu, dan wayang golek. Dari situlah tarian ini populer sebagai tarian yang memiliki gerakan-gerakan yang unik, energik, dan sederhana.",
+      image: "img/tari-jaipong.jpg",
+      video: "https://www.youtube.com/embed/UO50In5y-ZU"
+    },
+    {
+      id: 13,
+      name: "Tari Gambyong",
+      region: "jawa",
+      province: "Jawa Tengah",
+      description: "Tari Gambyong biasanya ditampilkan pada musim tanam dan panen padi sebagai penghormatan kepada Dewi Sri. Tarian tradisional ini biasanya dibawakan oleh dua wanita muda yang mengenakan gaun berwarna hijau.",
+      image: "img/tari-gambyong.jpg",
+      video: "https://www.youtube.com/embed/ua5ljHVBV64"
+    },
+    {
+      id: 14,
+      name: "Tari Serimpi",
+      region: "jawa",
+      province: "DI Yogyakarta",
+      description: "Tari serimpi berasal dari Keraton di Jawa yaitu Keraton Yogyakarta dan juga Surakarta. Tarian ini menjadi salah satu media hiburan bagi para penonton yang sedang merasa emosi, lelah, maupun banyak pikiran.",
+      image: "img/tari-serimpi.jpg",
+      video: "https://www.youtube.com/embed/Xgx7-6TXyao"
+    },
+    {
+      id: 15,
+      name: "Tari Reog",
+      region: "jawa",
+      province: "Jawa Timur",
+      description:"Reog merupakan salah satu kekayaan budaya Indonesia yang kaya akan sejarah dan keindahan seni. Tarian ini berasal dari Ponorogo, Jawa Timur, dan telah menjadi bagian tak terpisahkan dari kehidupan masyarakat setempat. Reog adalah tarian yang dilakukan di arena terbuka dan berfungsi sebagai hiburan rakyat. Namun, Reog bukan sekadar pertunjukan biasa; ia menyimpan unsur magis dan misteri yang membuatnya begitu memikat.",
+      image: "img/tari-reog.jpg",
+      video: "https://www.youtube.com/embed/no2IZi_8QKg"
+    },
+    {
+      id: 16,
+      name: "Tari Topeng Klana",
+      region: "jawa",
+      province: "Banten",
+      description: "Tari Topeng Klana atau Topeng Kelana merupakan tarian yang berasal dari Cirebon, dan telah lama tumbuh juga di daerah-daerah sekitar Cirebon seperti Indramayu. Tarian ini merupakan bagian dari Tari Topeng Cirebon yang punya asal-usul. Klana sendiri merupakan salah satu dari lima jenis topeng dalam Tari Topeng Cirebon.",
+      image: "img/tari-topeng-klana.jpg",
+      video: "https://www.youtube.com/embed/7vK_DXm98vA"
+    },
+    {
+      id: 17,
+      name: "Tari Pendet",
+      region: "bali-nusa",
+      province: "Bali",
+      description: "Tari Pendet pada awalnya merupakan tari pemujaan yang banyak diperagakan di pura, tempat ibadah umat Hindu di Bali, Indonesia. Tarian ini melambangkan penyambutan atas turunnya dewata ke alam dunia. Lambat-laun, seiring perkembangan zaman, para seniman Bali mengubah Pendet menjadi ucapan selamat datang, meski tetap mengandung anasir yang sakral-religius.",
+      image: "img/tari-pendet.jpg",
+      video: "https://www.youtube.com/embed/r93o8G3zEbc"
+    },
+    {
+      id: 18,
+      name: "Tari Lenggo",
+      region: "bali-nusa",
+      province: "Nusa Tenggara Barat",
+      description: "Tari Lenggo adalah tarian yang sering ditarikan di lingkungan Kerajaan Bima atau kantor pemerintahan saat kedatangan tamu resmi. Tari klasik ditarikan oleh empat orang perempuan dan empat orang laki-laki. Di mana mereka mengenakan pakaian adat tradisional Kota Bima (baju bodo).",
+      image: "img/tari-lenggo.avif",
+      video: "https://www.youtube.com/embed/skzpwFFy1uM"
+    },
+    {
+      id: 19,
+      name: "Tari Cerana",
+      region: "bali-nusa",
+      province: "Nusa Tenggara Timur",
+      description: "Tari cerana merupakan tari selamat datang atau tarian penyambutan yang khas dari Kupang, Provinsi Nusa Tenggara Timur (NTT). Tarian ini biasanya diakhiri dengan menyajikan sirih dan pinang di dalam cerana sebagai simbol dari penerimaan masyarakt terhadap tamunya dengan hati yang tulus, bersih dan penuh kasih.",
+      image: "img/tari-cerana.jpeg",
+      video: "https://www.youtube.com/embed/waXcbvkRNCo"
+    },
+    {
+      id: 20,
+      name: "Tari Ajat Temuai Datai",
+      region: "kalimantan",
+      province: "Kalimantan Barat",
+      description: "Tari Ajat Temuai Datai adalah tari penyambutan khas Suku Dayak Iban di Provinsi Kalimantan Barat. Kata Ajat Temuai Datai diadopsi dari bahasa Dayak Mualang, salah satu sub etnis kelompok Dayak Iban. Ajat atau ngajat adalah tari kepahlawanan di kalangan Suku Dayak Iban di Indonesia, Malaysia, dan Brunei Darussalam.",
+      image: "img/tari-ajat.jpg",
+      video: "https://www.youtube.com/embed/8AUD2ZIJeDw"
+    },
+    {
+      id: 21,
+      name: "Tari Giring-giring",
+      region: "kalimantan",
+      province: "Kalimantan Tengah",
+      description: "Tari giring-giring adalah tarian khas Ma'anyan yang mendiami daerah Kabupaten Barito Timur dan Kabupaten Barito Selatan provinsi Kalimantan Tengah. Tari giring-giring atau juga disebut Gangereng biasanya ditampilkan untuk menyambut tamu.",
+      image: "img/tari-giring.webp",
+      video: "https://www.youtube.com/embed/4XZn2l7IHDM"
+    },
+    {
+      id: 22,
+      name: "Tari Topeng Banjar",
+      region: "kalimantan",
+      province: "Kalimantan Selatan",
+      description: "Tari Topeng Banjar merupakan salah satu kekayaan budaya yang memiliki nilai seni, sejarah, dan filosofi mendalam. Tarian ini bukan sekadar hiburan, tapi sarat pesan dan makna. Di tengah arus modernisasi, Tari Topeng Banjar menjadi simbol penting dalam menjaga jati diri masyarakat Kalimantan Selatan.",
+      image: "img/tari-topeng-banjar.jpeg",
+      video: "https://www.youtube.com/embed/_ENzOptCRQ4"
+    },
+    {
+      id: 23,
+      name: "Tari Hudoq",
+      region: "kalimantan",
+      province: "Kalimantan Timur",
+      description: "Hudoq adalah ritual tarian bertopeng yang melambangkan doa permohonan/ syukur agar mendapatkan hasil pertanian yang melimpah dan terhindar dari hama, yang digelar oleh sub-etnis Dayak di provinsi Kalimantan Timur. Tari Hudoq menggunakan topeng dan kostum, oleh sebab itu Hudoq termasuk golongan kesenian tari topeng.",
+      image: "img/tari-hudoq.webp",
+      video: "https://www.youtube.com/embed/nVM10FmnTEc"
+    },
+    {
+      id: 24,
+      name: "Tari Blunde",
+      region: "kalimantan",
+      province: "Kalimantan Utara",
+      description: "Tari Blunde (atau Blundik) adalah tarian tradisional yang berasal dari suku Dayak di Kalimantan Utara. Tarian ini biasanya dipentaskan dalam upacara adat, seperti perayaan panen, penyambutan tamu, atau festival kebudayaan. Tari Blunde menggambarkan semangat kebersamaan, syukur, dan penghormatan terhadap alam serta leluhur.",
+      image: "img/tari-blunde.jpg",
+      video: "https://www.youtube.com/embed/vSF5PLVCQ8E"
+    },
+    {
+      id: 25,
+      name: "Tari Maengket",
+      region: "sulawesi",
+      province: "Sulawesi Utara",
+      description: "Tari Maengket adalah tarian tradisional masyarakat suku Minahasa di Sulawesi Utara, yang awalnya berfungsi sebagai ungkapan rasa syukur kepada Tuhan atas hasil panen. Nama Maengket sendiri berasal dari kata engket yang berarti mengangkat tumit kaki naik turun, menunjukkan gerakan dasar tarian tersebut.",
+      image: "img/tari-maengket.webp",
+      video: "https://www.youtube.com/embed/Tfzf9rX1OfQ"
+    },
+    {
+      id: 26,
+      name: "Tari Pamonte",
+      region: "sulawesi",
+      province: "Sulawesi Tengah",
+      description: "Tari Pamonte adalah tari tradisional masyarakat Suku Kaili, Sulawesi Tengah yang ditampilkan sebagai penyambutan musim panen.Tari Pamonte diakui secara resmi sebagai Warisan Budaya Takbenda Indonesia dalam bentuk seni pertunjukan melalui SK No. 1044/P/2020.",
+      image: "img/tari-pamonte.jpg",
+      video: "https://www.youtube.com/embed/MfG35AAnXXw"
+    },
+    {
+      id: 27,
+      name: "Tari Kipas Pakarena",
+      region: "sulawesi",
+      province: "Sulawesi Selatan",
+      description: "Tari Kipas Pakarena adalah tari tradisional klasik dari Gowa, Sulawesi Selatan, yang menggambarkan kelembutan, kesetiaan, dan kesopanan perempuan Bugis Makassar, serta menceritakan kisah perpisahan khayangan (Boting Langi) dengan bumi (Lino).",
+      image: "img/tari-kipas-pakarena.jpeg",
+      video: "https://www.youtube.com/embed/46F0YjcvvpM"
     },
   ];
 
