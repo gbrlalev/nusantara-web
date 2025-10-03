@@ -244,6 +244,105 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "img/tari-kipas-pakarena.jpeg",
       video: "https://www.youtube.com/embed/46F0YjcvvpM"
     },
+    {
+      id: 28,
+      name: "Tari Lulo",
+      region: "sulawesi",
+      province: "Sulawesi Tenggara",
+      description: "Tari Lulo adalah tarian tradisional suku Tolaki dari Sulawesi Tenggara yang bermakna ungkapan syukur, persatuan, dan kasih sayang, serta berfungsi sebagai media untuk mencari jodoh dan mempererat tali persaudaraan.",
+      image: "img/tari-lulo.jpg",
+      video: "https://www.youtube.com/embed/axWYJPeq9FM"
+    },
+    {
+      id: 29,
+      name: "Tari Saronde",
+      region: "sulawesi",
+      province: "Gorontalo",
+      description: "Tari Saronde adalah tarian tradisional dari Gorontalo yang berasal dari tradisi malam pertunangan dalam upacara pernikahan adat. Tarian ini dulunya berfungsi sebagai cara calon mempelai pria untuk mengenal calon istrinya yang tidak bisa bertemu secara langsung. Tarian dilakukan berpasangan pria dan wanita dengan gerakan mengayunkan tangan dan kaki sambil memegang selendang, diiringi musik rebana dan lagu berbahasa Arab.",
+      image: "img/tari-saronde.webp",
+      video: "https://www.youtube.com/embed/46QylIVFRmA"
+    },
+    {
+      id: 30,
+      name: "Tari Sayyang Pattuqduq",
+      region: "sulawesi",
+      province: "Sulawesi Barat",
+      description: "Sayyang Pattuqduq (atau Sayyang Pattudu) adalah tradisi kuda menari dari masyarakat Suku Mandar di Sulawesi Barat, di mana kuda yang telah terlatih dihias dan ditunggangi anak perempuan untuk diarak keliling kampung.",
+      image: "img/tari-sayyang-pattuqduq.jpeg",
+      video: "https://www.youtube.com/embed/RwN185K3j3E"
+    },
+    {
+      id: 31,
+      name: "Tari Cakalele",
+      region: "maluku",
+      province: "Maluku",
+      description: "Cakalele adalah tarian perang tradisional Maluku yang digunakan untuk menyambut tamu ataupun dalam perayaan adat.Biasanya, tarian ini dibawakan oleh 30 pria dan wanita.[2] Tarian ini dilakukan secara berpasangan dengan iringan musik drum, suling, bia (sejenis musik tiup).",
+      image: "img/tari-cakalele.jpg",
+      video: "https://www.youtube.com/embed/dDLsSW0sU2I"
+    },
+    {
+      id: 32,
+      name: "Tari Gumatere",
+      region: "maluku",
+      province: "Maluku Utara",
+      description: "Tari Gumatere adalah tarian tradisional dari Pulau Morotai, Maluku Utara, yang berfungsi sebagai ritual untuk meminta petunjuk atas suatu persoalan atau fenomena alam. Tarian ini biasanya menampilkan 13 hingga 30 penari pria dan wanita, di mana penari pria menggunakan pedang atau tombak dan penari wanita menggunakan lenso (selendang).",
+      image: "img/tari-gumatere.jpg",
+      video: "https://www.youtube.com/embed/w3MTLQI_vIg"
+    },
+    {
+      id: 33,
+      name: "Tari Tumbu Tanah",
+      region: "papua",
+      province: "Papua Barat",
+      description: "Tari Tumbu Tanah adalah tarian tradisional masyarakat Arfak di Manokwari, Papua Barat, yang merupakan ekspresi budaya dan jati diri suku tersebut. Tarian ini dipentaskan untuk acara penting seperti penyambutan tamu, kemenangan perang, dan pesta pernikahan, serta sebagai wujud rasa syukur kepada leluhur dan roh nenek moyang.",
+      image: "img/tari-tumbu-tanah.jpg",
+      video: "https://www.youtube.com/embed/IIJZXJd0XzM"
+    },
+    {
+      id: 34,
+      name: "Tari Awaijale Rilejale",
+      region: "papua",
+      province: "Papua",
+      description: "Tari Awaijale Rilejale adalah tarian tradisional dari masyarakat suku Sentani di Kabupaten Jayapura, Papua, yang menggambarkan keindahan Danau Sentani saat senja ketika warga pulang bekerja menggunakan perahu. Tarian ini dibawakan oleh sekelompok penari pria dan wanita yang mengenakan pakaian adat Pea Malo yang terbuat dari serat pohon genemo, kulit kayu, dan daun sagu, serta dihiasi kalung manik-manik.",
+      image: "img/tari-awaijale.png",
+      video: "https://www.youtube.com/embed/qT6hqPkqQ7M"
+    },
+    {
+      id: 35,
+      name: "Tari Seka",
+      region: "papua",
+      province: "Papua Selatan",
+      description: "Tarian di Papua Selatan yang paling dikenal adalah Tari Seka, tarian masyarakat pesisir di wilayah Timika, Kaimana, dan Fakfak. Tarian ini mengekspresikan rasa syukur kepada Tuhan atas hasil panen, atau melambangkan semangat juang, serta juga digunakan untuk menyambut tamu dan acara pergaulan.",
+      image: "img/tari-seka.jpeg",
+      video: "https://www.youtube.com/embed/M3yCjKXdR4M"
+    },
+    {
+      id: 36,
+      name: "Tari Salawaku",
+      region: "papua",
+      province: "Papua Tengah",
+      description: "Salawaku merupakan tarian yang berasal dari daerah Mimika, provinsi Papua Tengah. Tarian ini dibawakan oleh berpuluh-puluh penari pria dan wanita. Tari Salawaku menggambarkan sepasang pria dan wanita yang dalam suatu perjalanan yang dikejar-kejar oleh sekelompok manusia.",
+      image: "img/tari-salawaku.jpg",
+      video: "https://www.youtube.com/embed/j8iKOgoQExg"
+    },
+    {
+      id: 37,
+      name: "Tari Wisisi",
+      region: "papua",
+      province: "Papua Pegunungan",
+      description: "Tarian Papua Pegunungan yang populer adalah Tari Wisisi, yang baru-baru ini memecahkan rekor MURI dan melibatkan banyak peserta dari berbagai kabupaten. Tarian ini unik karena menggabungkan budaya lokal dengan musik modern, sehingga sangat menarik dan enerjik. Tarian Wisisi dapat menjadi tarian yang mewakili semangat dan kebudayaan masyarakat Papua Pegunungan.",
+      image: "img/tari-wisisi.jpg",
+      video: "https://www.youtube.com/embed/fnSo6_vdbUo"
+    },
+    {
+      id: 38,
+      name: "Tari Aluyen",
+      region: "papua",
+      province: "Papua Barat Daya",
+      description: "Tari Aluyen adalah tarian tradisional suku Moi dari Distrik Aimas, Kabupaten Sorong, Papua Barat Daya, yang berasal dari dua kata alu (lagu) dan yen (dinyanyikan). Tarian ini merupakan bagian dari upacara adat untuk pembangunan rumah baru atau kebun baru, dipimpin oleh seorang penari pria dengan penari wanita dan pria di belakangnya, dan menampilkan gerakan berjalan sambil bergoyang pinggul.",
+      image: "img/tari-aluyen.jpg",
+      video: "https://www.youtube.com/embed/px6WUZWpnJA"
+    },
   ];
 
   // ngambil element dr html
