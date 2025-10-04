@@ -350,6 +350,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const searchInput = document.getElementById("searchInput");
 
+  // ambil daftar favorites dari localStorage
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
   // bikin pop up
   const modal = document.createElement("div");
   modal.id = "detailModal";
@@ -381,8 +384,14 @@ document.addEventListener("DOMContentLoaded", () => {
       // bikin div bru buat 1 tarian
       const card = document.createElement("div");
       card.className = `card ${item.region}`;
+
+       // cek apakah tarian ini ada di favorites
+      const isFavorite = favorites.some(fav => fav.id === item.id);
+      const heart = isFavorite ? "❤️" : "🤍";
+
       // html
       card.innerHTML = `
+      <span class="favorite-icon">${heart}</span>
         <img src="${item.image}" alt="${item.name}">
         <div class="card-body">
           <h3>${item.name}</h3>
@@ -391,35 +400,55 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
 
-      // buka popup
-      card.addEventListener("click", () => {
-        modal.style.display = "block"; // nambilin popup
-        //pas buka pop up judulnya jd nama item - provinsi & munculin deskripsi
-        modalTitle.innerText = item.name + " - " + item.province;
-        modalDescription.innerText = item.description;
+      // klik gambar/card buka popup
+      card.querySelector("img").addEventListener("click", () => openModal(item));
 
-        modalMedia.innerHTML = ""; // biar gk numpuk sm popup laen
-        // otomatis nampilin di popup vid utube, klo gda nnti nampilin gambar aja
-        if (item.video) {
-          const iframe = document.createElement("iframe");
-          iframe.src = item.video + "?autoplay=1";
-          iframe.width = "100%";
-          iframe.height = "315";
-          iframe.frameBorder = "0";
-          iframe.allow =
-            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-          iframe.allowFullscreen = true;
-          modalMedia.appendChild(iframe);
-        } else {
-          const img = document.createElement("img");
-          img.src = item.image;
-          img.alt = item.name;
-          modalMedia.appendChild(img);
-        }
+      // klik hati toggle favorites
+      const favIcon = card.querySelector(".favorite-icon");
+      favIcon.addEventListener("click", (e) => {
+        e.stopPropagation(); // biar gak buka modal
+        toggleFavorite(item, favIcon);
       });
 
       contentGrid.appendChild(card); // klo isi card smua udh ad, masukin ke dlm container
     });
+  };
+
+  // buka modal
+  const openModal = (item) => {
+    modal.style.display = "block";
+    modalTitle.innerText = item.name + " - " + item.province;
+    modalDescription.innerText = item.description;
+
+    modalMedia.innerHTML = "";
+    if (item.video) {
+      const iframe = document.createElement("iframe");
+      iframe.src = item.video + "?autoplay=1";
+      iframe.width = "100%";
+      iframe.height = "315";
+      iframe.frameBorder = "0";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      modalMedia.appendChild(iframe);
+    } else {
+      const img = document.createElement("img");
+      img.src = item.image;
+      img.alt = item.name;
+      modalMedia.appendChild(img);
+    }
+  };
+
+  // toggle favorites
+  const toggleFavorite = (item, iconEl) => {
+    const index = favorites.findIndex(fav => fav.id === item.id);
+    if (index === -1) {
+      favorites.push(item);
+      iconEl.textContent = "❤️";
+    } else {
+      favorites.splice(index, 1);
+      iconEl.textContent = "🤍";
+    }
+    localStorage.setItem("favorites", JSON.stringify(favorites));
   };
 
   // filter wilayah
@@ -429,6 +458,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       filterBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
+
+      // kalau klik tab Favorites
+      if (category === "favorites") {
+        renderCards(favorites);
+        return;
+      }
 
       const filtered = category === "all"
         ? danceData

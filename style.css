@@ -8,22 +8,33 @@ body {
 
 /* isinya nama web */
 .header {
-  background: #e63946;
+  background: #06183c;
   color: #fff;
   padding: 15px 30px;
   font-size: 24px;
   font-weight: bold;
 }
 .header span {
-  color: #ffdd00;
+  color: #b7c5e0;
 }
 
 /* home isinya semacem slogan */
 .home {
+  position: relative;
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #ffdd00, #e63946);
+  background-image: url('img/batik-biru.webp');
   color: #fff;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* transparan hitam */
+}
+.home h1, 
+.home p {
+  position: relative; /* supaya teks di atas overlay */
 }
 .home-content h1 {
   font-size: 32px;
@@ -52,7 +63,7 @@ body {
 }
 .filter-btn.active,
 .filter-btn:hover {
-  background: #e63946;
+  background: #0e3c96;
   color: #fff;
 }
 .search-container input {
@@ -91,7 +102,7 @@ body {
 .card-body h3 {
   margin: 0 0 5px;
   font-size: 18px;
-  color: #e63946;
+  color: #0e3c96;
 }
 .card-body p {
   font-size: 14px;
@@ -169,4 +180,27 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* buat button fav */
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 5px 8px;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.card {
+  position: relative;
 }
