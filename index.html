@@ -45,6 +45,30 @@
 
         <main class="grid-container" id="contentGrid"></main>
 
+        <!-- review/ masukan insight buat web & contact info -->
+        <section class="review-contact">
+            <div class="review-box">
+                <h2>Tinggalkan Review atau Komentar 💬</h2>
+                <form id="reviewForm">
+                    <input type="text" id="reviewName" placeholder="Nama (opsional)">
+                    <textarea id="reviewText" placeholder="Tulis komentar kamu..." required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+
+                <div id="reviewList" class="review-list"></div>
+            </div>
+
+            <div class="contact-box">
+                <h2>Hubungi Kami 📩</h2>
+                <form id="contactForm">
+                    <input type="text" id="contactName" placeholder="Nama" required>
+                    <input type="email" id="contactEmail" placeholder="Email" required>
+                    <textarea id="contactMessage" placeholder="Pesan kamu..." required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
         <footer>
             <p>Copyright &copy; 2025 RitmeWarisan</p>
         </footer>

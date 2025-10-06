@@ -506,4 +506,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // render awal
   renderCards(danceData);
+
+  //review & contact
+  const reviewForm = document.getElementById("reviewForm");
+  const reviewList = document.getElementById("reviewList");
+
+  let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+  const renderReviews = () => {
+    if (!reviewList) return;
+    reviewList.innerHTML = reviews
+      .map((r, i) => `
+        <div class="review-item">
+          <p><strong>${r.name || "Anonim"}</strong>: ${r.text}</p>
+          <button class="delete-btn" data-index="${i}">❌</button>
+        </div>
+      `)
+      .join("");
+
+    // tambahkan event listener setelah render
+    const deleteButtons = document.querySelectorAll(".delete-btn");
+    deleteButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const index = parseInt(btn.dataset.index);
+          reviews.splice(index, 1); // hapus dari array
+          localStorage.setItem("reviews", JSON.stringify(reviews));
+          renderReviews(); // render ulang list
+        });
+      });
+  };
+
+  // contact info alert
+  const contactForm = document.getElementById("contactForm");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Pesanmu sudah dikirim! Terima kasih telah menghubungi kami ❤️");
+      contactForm.reset();
+    });
+  }
+
+  renderReviews();
+
+  // simpen ke local storage
+  reviewForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("reviewName").value.trim();
+    const text = document.getElementById("reviewText").value.trim();
+
+    const newReview = { name, text };
+    reviews.push(newReview);
+    localStorage.setItem("reviews", JSON.stringify(reviews));
+
+    reviewForm.reset();
+    renderReviews();
+  });
 });
