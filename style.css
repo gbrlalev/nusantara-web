@@ -22,9 +22,12 @@ body {
 .home {
   position: relative;
   text-align: center;
-  padding: 50px 20px;
+  padding: 90px 20px;
   background-image: url('img/batik-biru.webp');
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .home::before {
   content: "";
@@ -37,11 +40,11 @@ body {
   position: relative; /* supaya teks di atas overlay */
 }
 .home-content h1 {
-  font-size: 32px;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 .home-content p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* buat nav sm search */
@@ -205,7 +208,7 @@ footer {
   position: relative;
 }
 
-/* review & contact info */
+/* review & contact */
 .review-contact {
   display: flex;
   justify-content: space-between;
@@ -302,4 +305,91 @@ footer {
 .delete-btn:hover {
   transform: scale(1.1);
   background: #092b70;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+
+  /* ini header */
+  .header {
+    font-size: 20px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  /* home */
+  .home {
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 22px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+  }
+
+  /* search n filteringny */
+  .search {
+    padding: 15px;
+  }
+
+  .filter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    font-size: 13px;
+    margin: 4px;
+    padding: 6px 10px;
+  }
+
+  .search-container input {
+    width: 85%;
+    font-size: 14px;
+  }
+
+  /* tarianny */
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  /* penjelasan */
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* contact sm review */
+  .review-contact {
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 15px;
+  }
+
+  .review-box, .contact-box {
+    flex: 1 1 100%;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+
+  .review-box h2, .contact-box h2 {
+    font-size: 18px;
+  }
+
+  /* footer */
+  footer {
+    font-size: 13px;
+    padding: 10px;
+  }
 }
