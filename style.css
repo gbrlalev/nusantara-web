@@ -128,11 +128,11 @@ body {
 .modal-content {
   background: #fff;
   margin: auto;
-  padding: 20px;
   border-radius: 12px;
-  width: 80%;
   max-width: 700px;
   text-align: center;
+  width: 90%;
+  padding: 15px;
 }
 .modal-content img {
   width: 100%;
@@ -145,6 +145,10 @@ body {
   float: right;
   font-size: 28px;
   cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
 }
 .close:hover {
   color: #000;
@@ -157,16 +161,6 @@ footer {
   background: #f1f1f1;
   margin-top: 20px;
   font-size: 14px;
-}
-
-/* pas close pop up */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 /* vid pop up */
@@ -351,12 +345,6 @@ footer {
   .search-container input {
     width: 85%;
     font-size: 14px;
-  }
-
-  /* penjelasan */
-  .modal-content {
-    width: 90%;
-    padding: 15px;
   }
 
   /* contact sm review */
