@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: 3,
-      name: "Tari Paring",
+      name: "Tari Piring",
       region: "sumatra",
       province: "Sumatra Barat",
       description: "Tari piring adalah tarian tradisional Minangkabau yang berasal dari Sumatera Barat, Solok. Tarian ini menampilkan atraksi menggunakan piring. Para penari mengayunkan piring di tangan mengikuti gerakan-gerakan cepat yang teratur, tanpa satu pun piring terlepas dari tangan. Gerakannya diambil dari langkah dalam silat Minangkabau atau silek.",
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 6,
       name: "Tari Gending Sriwijaya",
       region: "sumatra",
-      province: "Sumetra Selatan",
+      province: "Sumatra Selatan",
       description: "Tari tradisional yang sangat indah dan menawan, dengan maksud mulia dan kemurahan hati dalam menyambut tamu, yakni tari Gending Sriwijaya. Tarian ini memang tampak begitu mewah dan elegan. Meski begitu, kerendahhatian dan gotong royong kental terkandung di dalamnya.",
       image: "img/tari-gending-sriwijaya.jpg",
       video: "https://www.youtube.com/embed/_iOgonp5hEk"
