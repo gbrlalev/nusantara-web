@@ -353,17 +353,6 @@ footer {
     font-size: 14px;
   }
 
-  /* tarianny */
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 20px;
-  }
-
-  .card img {
-    height: 160px;
-  }
-
   /* penjelasan */
   .modal-content {
     width: 90%;
